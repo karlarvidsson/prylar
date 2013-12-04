@@ -108,6 +108,8 @@ end
 
 disp('Total damage in one burst');
 disp('HMG (6 sec mag size)');
-disp([hmg_rof/60 * 6 * hmg_Y]);
+disp('    range   damage');
+disp([hmg_X hmg_rof/60 * 6 * hmg_Y]);
 disp('LMG (6 sec mag size)');
-disp([lmg_rof/60 * 3.5 * lmg_Y]);
+disp('    range   damage');
+disp([lmg_X lmg_rof/60 * 3.5 * lmg_Y]);
