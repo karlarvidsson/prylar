@@ -4,8 +4,8 @@ PLOT_END = 100;
 
 
 % HMG
-hmg_maxdamage = 47;
-hmg_mindamage = 36;
+hmg_maxdamage = 50;
+hmg_mindamage = 38;
 hmg_dropoff_start = 15;
 hmg_dropoff_end = 75;
 hmg_x = (1:hmg_dropoff_end - hmg_dropoff_start-1);
@@ -27,8 +27,8 @@ set(gca,'XTick', (0:5:PLOT_END));
 
 
 % LMG
-lmg_maxdamage = 19;
-lmg_mindamage = 15;
+lmg_maxdamage = 20;
+lmg_mindamage = 15.9;
 lmg_dropoff_start = 8;
 lmg_dropoff_end = 50;
 
@@ -63,7 +63,7 @@ hmg_ttk = (hmg_btk-1) .* hmg_time_per_round + (hmg_X * hmg_time_per_meter);
 
 subplot(4,1,3);
 plot(hmg_X, hmg_ttk);
-set(gca,'YTick', (0:0.1:hmg_ttk(length(hmg_ttk))));
+set(gca,'YTick', (0:0.2:hmg_ttk(length(hmg_ttk))));
 set(gca,'XTick', (0:5:PLOT_END));
 
 
@@ -79,7 +79,7 @@ lmg_ttk = (lmg_btk-1) .* lmg_time_per_round + (lmg_X * lmg_time_per_meter);
 
 subplot(4,1,4);
 plot(lmg_X, lmg_ttk);
-set(gca,'YTick', (0:0.1:lmg_ttk(length(lmg_ttk))));
+set(gca,'YTick', (0:0.2:lmg_ttk(length(lmg_ttk))));
 set(gca,'XTick', (0:5:PLOT_END));
 
 subplot(4,1,1);
